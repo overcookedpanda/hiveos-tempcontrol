@@ -23,3 +23,5 @@ Reboot the rig and use 'screen -r temp' to view the script.
 Doing this allows your rig to start out at 90% and then will throttle the fans down with the script, to avoid overheating.
 
 Keep in mind, this script does nothing once fans are at 100%, the logic to cut the power limit on the cards probably needs to be added back in, but we're hoping HiveOS adds their auto temp control soon.  It would be wise to set a temp limit in your miner config in the meantime.
+
+NOTE: On systems with more than 8 gpus, this script will start out really slow, but it should still be functional, but it is very important to set the fanspeed in Hive to 90% since it moves pretty slowly until it gets everything adjusted.  This is due to the nvidia-smi calls.
